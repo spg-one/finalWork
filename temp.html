@@ -1,87 +1,130 @@
-<!--this is the HCIT final work of wbh&lmz-->
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="wbh&lmz">
-	
-    <title>饿个锤子 | 学校食堂点餐订餐</title>
-	
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-	
-	<!-- Custom CSS -->
-    <link href="css/mystyle.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/lightbox.css">
-	<link rel="stylesheet" href="fonts/stylesheet.css">
-	
-	<!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	
-	<!-- Owl Carousel Assets -->
-    <link href="owl-carousel/owl.carousel.css" rel="stylesheet">
-    <link href="owl-carousel/owl.theme.css" rel="stylesheet">
-	
-	<!-- jQuery and Modernizr-->
-	<script src="js/jquery-2.1.1.js"></script>
-	
-	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="js/html5shiv.js"></script>
-        <script src="js/respond.min.js"></script>
-    <![endif]-->
-</head>
+<html>
 
-<body class="index-page">
-	<div class="custom-banner">
-		<header class="main-header">
-			<!-- /////////////////////////////////////////Navigation -->
-			<nav id="menu" class="navbar container">
-				<div class="">
-					<div class="navbar-header">
-						<button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
-						<a href="index.html" class="navbar-brand visible-xs">PhotoGrap</a>
-					</div>
-					<div class="collapse navbar-collapse navbar-ex1-collapse">
-						<ul class="nav navbar-nav">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="gallery.html">Gallery</a></li>
-							<li class="dropdown"><a href="archive.html" class="dropdown-toggle" data-toggle="dropdown">Categories <i class="fa fa-chevron-down"></i></a>
-								<div class="dropdown-menu" style="margin-left: -203.625px;">
-									<div class="dropdown-inner">
-										<ul class="list-unstyled">
-											<li><a href="#">Text 301</a></li>
-											<li><a href="#">Text 302</a></li>
-											<li><a href="#">Text 303</a></li>
-											<li><a href="#">Text 304</a></li>
-											<li><a href="#">Text 305</a></li>
-										</ul>
-										<ul class="list-unstyled">
-											<li><a href="#">Text 306</a></li>
-											<li><a href="#">Text 307</a></li>
-											<li><a href="#">Text 308</a></li>
-											<li><a href="#">Text 309</a></li>
-											<li><a href="#">Text 310</a></li>
-										</ul>
-										<ul class="list-unstyled">
-											<li><a href="#">Text 311</a></li>
-											<li><a href="#">Text 312</a></li>
-											<li><a href="#">Text 313</a></li>
-											<li><a href="#">Text 314</a></li>
-											<li><a href="#">Text 315</a></li>
-										</ul>
-									</div>
-								</div>
-							</li>
-							<li><a href="archive.html">Blog</a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-            <!-- Navigation -->
-        </header>
-    </div>
-</body>
+    <head>
+        <meta charset="utf-8" />
+        <title>轮播图</title>
+        <style type="text/css">
+            * {
+                margin: 0px;
+                padding: 0px;
+            }
+
+            #lunbotu {
+                width: 1226px;
+                height: 460px;
+                overflow: hidden;
+                position: relative;
+                margin: 0px auto;
+                position: relative;
+            }
+
+            #banner {
+                height: 460px;
+                width: 6130px;
+                position: absolute;
+                transition: 2s;
+                left: 0px;
+            }
+
+            #banner img {
+                float: left;
+            }
+
+            #biao {
+                position: absolute;
+                top: 430px;
+                left: 43%;
+            }
+
+            #biao_1 {
+                height: 10px;
+                width: 10px;
+                border: 1px solid #000;
+                z-index: 10;
+                float: left;
+                list-style: none;
+                border-radius: 50%;
+                margin-left: 20px;
+                text-align: center;
+                cursor:pointer;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="lunbotu">
+            <div id="banner">
+                <img class="m" src="image/1.jpg" style="width: 1226px;height:460px"/>
+                <img class="m" src="image/2.jpg" style="width: 1226px;height:460px"/>
+                <img class="m" src="image/3.jpg" style="width: 1226px;height:460px"/>
+                <img class="m" src="image/4.jpg" style="width: 1226px;height:460px"/>
+                <img class="m" src="image/5.jpg" style="width: 1226px;height:460px"/>
+            </div>
+            <div id="biao">
+                <ul>
+                    <li id="biao_1" class="clickCircle"></li>
+                    <li id="biao_1" class="clickCircle"></li>
+                    <li id="biao_1" class="clickCircle"></li>
+                    <li id="biao_1" class="clickCircle"></li>
+                    <li id="biao_1" class="clickCircle"></li>
+                </ul>
+            </div>
+        </div>
+
+    </body>
+    <script type="text/javascript">
+        var slid = document.getElementById("banner");
+        //var id = document.getElementById("bt");
+        var imgwidth = document.getElementsByClassName("m");
+        var oli=document.getElementsByTagName("li");
+        //console.log(oli);
+        //console.log(imgwidth );
+        var i =0;
+        auto();
+        oli[0].style.cssText="background:#ff6700;color:#fff;";
+        function auto(){
+
+            time = setInterval(function(){
+                i++;
+            if(i <= 4) {
+                slid.style.left = slid.offsetLeft - 1226 + "px";
+                oli[i].style.cssText="background:#ff6700;color:#fff;";
+                oli[i-1].style.cssText="background:none;color:#000;";
+            } else {
+                slid.style.left ="0px";
+                oli[4].style.cssText="background:none;color:#000;";
+                oli[0].style.cssText="background:#ff6700;color:#fff;";
+                i=0;
+            }
+            console.log(i);
+
+        }, 3000)
+
+        }
+
+            for(var j=0;j<=4;j++){
+                //console.log(imgwidth[j].index);
+            imgwidth[j].index=j;
+            oli[j].index=j;
+            oli[j].onmouseover=function(){
+                this.style.cssText="background:#ff6700;color:#fff;"    
+                this.onmouseout=function(){
+                    this.style.cssText="background:none;color:#000;"
+                }
+            }
+
+            oli[j].onclick=function(){
+                clearInterval(time);
+                m=this.index;
+                slid.style.left=-m*1226+"px";    
+                i=m;
+                auto();
+                console.log(i);
+            }
+            }    
+
+    </script>
+
+</html>
