@@ -1,15 +1,22 @@
 var slid = document.getElementById("banner");
-var imgwidth = document.getElementsByClassName("m");
+var imgwidth = document.getElementsByClassName("scrollingImg");
 var oli = document.getElementsByClassName("clickCircle");
 var i = 0;
+var availableWidth = document.body.clientWidth;
 auto();
 oli[0].style.cssText = "background:#000000;color:#fff;";
+
+window.onload=function(){
+    $(".scrollingImg").width(availableWidth*0.9);
+    $("#banner").width(availableWidth*0.9*5);
+}
+
 function auto() {
 
     time = setInterval(function () {
         i++;
         if (i <= 4) {
-            slid.style.left = slid.offsetLeft - 1300 + "px";
+            slid.style.left = slid.offsetLeft - availableWidth*0.9 + "px";
             oli[i].style.cssText = "background:#000000;color:#fff;";
             oli[i - 1].style.cssText = "background:none;color:#000;";
         } else {
@@ -18,7 +25,7 @@ function auto() {
             oli[0].style.cssText = "background:#000000;color:#fff;";
             i = 0;
         }
-        console.log(i);
+        console.log(document.body.clientWidth);
 
     }, 3500)
 
@@ -38,7 +45,7 @@ for (var j = 0; j <= 4; j++) {
     oli[j].onclick = function () {
         clearInterval(time);
         m = this.index;
-        slid.style.left = -m * 1300 + "px";
+        slid.style.left = -m * availableWidth*0.9 + "px";
         i = m;
         auto();
         console.log(i);
