@@ -8,7 +8,9 @@ oli[0].style.cssText = "background:#000000;color:#fff;";
 
 window.onload=function(){
     $(".scrollingImg").width(availableWidth*0.9);
-    $("#banner").width(availableWidth*0.9*5);
+    $("#banner").width(availableWidth*4.5);
+    $(".daily-dish").width(availableWidth*0.9);
+    this.console.log(this.availableWidth);
 }
 
 function auto() {
@@ -25,7 +27,6 @@ function auto() {
             oli[0].style.cssText = "background:#000000;color:#fff;";
             i = 0;
         }
-        console.log(document.body.clientWidth);
 
     }, 3500)
 
@@ -47,7 +48,15 @@ for (var j = 0; j <= 4; j++) {
         m = this.index;
         slid.style.left = -m * availableWidth*0.9 + "px";
         i = m;
+        for(var temp = 0;temp<=4;temp++){
+            if(temp==m){
+                oli[temp].style.cssText = "background:#000000;color:#fff;";
+            }
+            else{
+                oli[temp].style.cssText = "background:none;color:#000;";
+            }
+            
+        }
         auto();
-        console.log(i);
     }
 }    

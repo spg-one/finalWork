@@ -20,7 +20,7 @@
 
 </head>
 
-<body>
+<body onclick="test()">
 	<!--navigation bar and Today's popular dish -->
 	<div class="custom-banner container border">
 		<header>
@@ -36,15 +36,15 @@
 			<!-- Carousel -->
 			<div id="lunbotu">
 				<div id="banner">
-					<img class="scrollingImg" src="image/1.jpg" style="width: 1300px;height:520px" /> 
+					<img class="scrollingImg" src="image/1.jpg" style="width: 1300px;height:580px" />
 					<button class="btn firstBtn">立即预定 ></button>
-					<img class="scrollingImg" src="image/2.jpg" style="width: 1300px;height:520px" />
+					<img class="scrollingImg" src="image/2.jpg" style="width: 1300px;height:580px" />
 					<button class="btn secondBtn">立即预定 ></button>
-					<img class="scrollingImg" src="image/3.jpg" style="width: 1300px;height:520px" />
+					<img class="scrollingImg" src="image/3.jpg" style="width: 1300px;height:580px" />
 					<button class="btn thirdBtn">立即预定 ></button>
-					<img class="scrollingImg" src="image/4.jpg" style="width: 1300px;height:520px" />
+					<img class="scrollingImg" src="image/4.jpg" style="width: 1300px;height:580px" />
 					<button class="btn forthBtn">立即预定 ></button>
-					<img class="scrollingImg" src="image/5.jpg" style="width: 1300px;height:520px" />
+					<img class="scrollingImg" src="image/5.jpg" style="width: 1300px;height:580px" />
 					<button class="btn fifthBtn">立即预定 ></button>
 				</div>
 				<div id="clickCircleSet">
@@ -64,35 +64,29 @@
 
 	<!--the list of Today's dishes of all-->
 	<div class="daily-dish container border">
-		<div class="title border">
-			今日菜品
+		<div class="title border">今日热卖</div>
+		<div class="dishImg" no="1">
+			<img  src="image/1.jpg"  width="25%">
+			<button id="addButton" class="dish-description border">+</button>
 		</div>
-		<div class="dish-list border">
-			<div class="border dish">
-				<img class="m" src="image/1.jpg" style="width: 15rem;height:5rem" />
-			</div>
-			<div class="border dish">
-				<img class="m" src="image/2.jpg" style="width: 15rem;height:8rem" />
-			</div>
-			<div class="border dish">
-				<img class="m" src="image/3.jpg" style="width: 15rem;height:5rem" />
-			</div>
-			<div class="border dish">
-				<img class="m" src="image/4.jpg" style="width: 15rem;height:5rem" />
-			</div>
+		<div class="dishImg" no="2">
+			<img  src="image/2.jpg"  width="25%" >
+			
 		</div>
-		<div class="dish-list border">
-				<div class="border">立即预定</div>
-				<div class="border">立即预定</div>
-				<div class="border">立即预定</div>
-				<div class="border">立即预定</div>
+		<div class="dishImg" no="3">
+			<img  src="image/3.jpg"  width="25%">
+			
 		</div>
-		
+		<div class="dishImg" no="4">
+			<img  src="image/4.jpg"  width="25%">
+			
+		</div>
+		<script type="text/javascript" src="js/addButton.js"></script>
 	</div>
 
 
 
 
-</body>
+</body o>
 
 </html>
