@@ -13,7 +13,10 @@ body {
     margin-bottom: 1rem;
 }
 .border{
-    border: black solid .05rem;
+    border: red solid .08rem;
+}
+.bordergreen{
+    border: green solid 1px;
 }
 ul li {
     list-style: none;
@@ -24,14 +27,20 @@ ul {
     padding: 0;
 }
 nav {
-    display: flex;
-    justify-content:space-around ;
+    display: inline-block;
     text-decoration: none;
     width: 30%;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     margin-left: 5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     font-size: 80%;
+}
+.menu1{
+    display: flex;
+    justify-content:space-around ;
+}
+#chart:hover{
+    cursor: pointer;
 }
 a {
     text-decoration: none;
@@ -140,10 +149,9 @@ a:hover {
     font-size: 30px;
     color: white;
 
-    left: 0;
     bottom: 0;
     width: 25%;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.5);
 }
 .addButton{
     text-align: center;

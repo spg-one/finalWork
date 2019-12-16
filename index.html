@@ -20,16 +20,23 @@
 
 </head>
 
-<body onclick="test()">
+<body>
 	<!--navigation bar and Today's popular dish -->
 	<div class="custom-banner container border">
-		<header>
+		<header class="header">
 			<!-- /////////////////////////////////////////Navigation -->
-			<nav id="menu">
-				<a href="index.html">首页</a>
-				<a href="order.html">我的订单</a>
-				<a href="stastic.html">订单统计</a>
-				<a href="support.html">支持</a>
+			<nav id="menu" class="border">
+				<div class="menu1" style="font-size: large;">
+					<a href="index.html">首页</a>
+					<a href="order.html">我的订单</a>
+					<a href="stastic.html">订单统计</a>
+					<a href="support.html">支持</a>
+				</div>
+
+
+			</nav>
+			<nav class="border" style="padding-bottom: 0;">
+				<img id="chart" src="image/chart.png" style="margin-left: 80%;margin-bottom: 0;margin-top: 2%;" width="5%" >
 			</nav>
 			<!-- Navigation -->
 
@@ -65,23 +72,24 @@
 	<!--the list of Today's dishes of all-->
 	<div class="daily-dish container border">
 		<div class="title border">今日热卖</div>
+		<div class="dishImg" no="0">
+			<img src="image/1.jpg" width="25%">
+			<button class="dish-description border">+</button>
+		</div>
 		<div class="dishImg" no="1">
-			<img  src="image/1.jpg"  width="25%">
-			<button id="addButton" class="dish-description border">+</button>
+			<img src="image/2.jpg" width="25%">
+			<button class="dish-description border">+</button>
 		</div>
 		<div class="dishImg" no="2">
-			<img  src="image/2.jpg"  width="25%" >
-			
+			<img src="image/3.jpg" width="25%">
+			<button class="dish-description border">+</button>
 		</div>
 		<div class="dishImg" no="3">
-			<img  src="image/3.jpg"  width="25%">
-			
-		</div>
-		<div class="dishImg" no="4">
-			<img  src="image/4.jpg"  width="25%">
-			
+			<img src="image/4.jpg" width="25%">
+			<button class="dish-description border">+</button>
 		</div>
 		<script type="text/javascript" src="js/addButton.js"></script>
+		<script type="text/javascript" src="js/addToChart.js"></script>
 	</div>
 
 
