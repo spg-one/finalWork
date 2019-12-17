@@ -10,7 +10,6 @@ window.onload=function(){
     $(".scrollingImg").width(availableWidth*0.9);
     $("#banner").width(availableWidth*4.5);
     $(".daily-dish").width(availableWidth*0.9);
-    this.console.log(this.availableWidth);
 }
 
 function auto() {
@@ -33,7 +32,6 @@ function auto() {
 }
 
 for (var j = 0; j <= 4; j++) {
-    //console.log(imgwidth[j].index);
     imgwidth[j].index = j;
     oli[j].index = j;
     oli[j].onmouseover = function () {

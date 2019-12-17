@@ -10,10 +10,10 @@ body {
     z-index: 0;
 }
 .container {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 .border{
-    border: red solid .08rem;
+    
 }
 .bordergreen{
     border: green solid 1px;
@@ -26,18 +26,42 @@ ul {
     margin: 0;
     padding: 0;
 }
-nav {
-    display: inline-block;
+#menu {
+    display: flex;
     text-decoration: none;
-    width: 30%;
+    width: 90%;
     margin-top: 0.5rem;
-    margin-left: 5rem;
+    margin-left: 5%;
     margin-bottom: 0.5rem;
-    font-size: 80%;
+    font-size: 100%;
+    justify-content: space-between;
 }
 .menu1{
-    display: flex;
+    display: flex;;
     justify-content:space-around ;
+    align-items: center;
+    width: 30%;
+}
+.menu2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 0;
+
+}
+input{
+    outline: none;
+    outline-style: none;
+    border: black solid;
+    width: 20rem;
+    padding: 1.5%;
+}
+select{
+    padding: 0.2rem;
+}
+#login:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 #chartLogo:hover{
     cursor: pointer;
@@ -47,28 +71,42 @@ nav {
     position: absolute;
     width: 100%;
     left: 0;
-    height: 100%;
+    height: 170%;
     top: 0;
     background: rgba(0, 0, 0, 0.8);
     z-index: 9;
     transition: ease-in-out;
 }
 .chart{
+    display: none;
     position: absolute;
     width: 25%;
     left: 100%;
-    height: 100%;
+    height: 170%;
     top: 0;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(243, 245, 237, 0.897);
     z-index: 10;
     transition: all .5s;
+    overflow: scroll;
 }
 .chartTop{
-    height: 6%;
+    height: 3%;
+    background: rgba(65, 65, 65, 0.9);
+    display: flex;
+    justify-content: space-between;
+}
+#back:hover{
+    cursor: pointer;
+}
+#clean:hover{
+    cursor: pointer;
 }
 .chartBottom{
-    height: 94%;
+    height: 100%;
     background: rgba(243, 245, 237, 0.897);
+}
+.chartImg:hover{
+    cursor: pointer;
 }
 a {
     text-decoration: none;
@@ -85,23 +123,23 @@ a:hover {
     padding-bottom: .7rem;
     border-color: black;
     font-size: 1rem;
-    top: 300px;
+    top: 75%;
     position: absolute;
 }
 .firstBtn {
-    left: 4%;
+    left: 3%;
 }
 .secondBtn {
-    left: 24%;
+    left: 23%;
 }
 .thirdBtn {
-    left: 44%;
+    left: 43%;
 }
 .forthBtn {
-    left: 64%;
+    left: 63%;
 }
 .fifthBtn {
-    left: 84%;
+    left: 83%;
 }
 
 .btn:hover {
@@ -128,7 +166,7 @@ a:hover {
 }
 #clickCircleSet {
     position: absolute;
-    top: 470px;
+    top: 90%;
     left: 43%;
 }
 .clickCircle {
@@ -176,10 +214,13 @@ a:hover {
     position: absolute;
     font-size: 30px;
     color: white;
-
     bottom: 0;
-    width: 25%;
+    width: 100%;
+    left: 0;
     background: rgba(0, 0, 0, 0.5);
+}
+.dish-description:hover{
+    cursor: pointer;
 }
 .addButton{
     text-align: center;
@@ -187,4 +228,5 @@ a:hover {
 .dishImg{
     list-style: none;
     display: inline;
+    position: relative;
 }

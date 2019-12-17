@@ -26,18 +26,34 @@
 		<header class="header">
 			<!-- /////////////////////////////////////////Navigation -->
 			<nav id="menu" class="border">
-				<div class="menu1" style="font-size: large;">
+				<div class="menu1 border" style="font-size: large;">
 					<a href="index.html">首页</a>
 					<a href="order.html">我的订单</a>
 					<a href="stastic.html">订单统计</a>
 					<a href="support.html">支持</a>
 				</div>
+				<div class="menu2 border">
+					<div>
+						<input type="search" placeholder="Serach in site">
+					</div>
+					<select>
+						<option value="清水河校区">清水河校区</option>
+						<option value="沙河校区">沙河校区</option>
+						<option value="九里堤校区">九里堤校区</option>
+						<option value="成都学院">成都学院</option>
+					</select>
+					<div style="width: 4%;display: flex; position: relative;">
+						<img id="chartLogo" src="image/chart.png" width="100%" class="border">
+						<div id="chartNumber"
+							style="position: absolute;width: 70%;left: 85%;top: -40%; background: red;border-radius: 50%;text-align: center;">
+							0</div>
+					</div>
 
+					<div id="login">请登录</div>
+				</div>
 
 			</nav>
-			<nav class="border" style="padding-bottom: 0;">
-				<img id="chartLogo" src="image/chart.png" style="margin-left: 80%;margin-bottom: 0;margin-top: 2%;" width="5%" >
-			</nav>
+
 			<!-- Navigation -->
 
 			<!-- Carousel -->
@@ -65,7 +81,7 @@
 					</ul>
 				</div>
 			</div>
-			<script type="text/javascript" src="js/scrolling.js"></script>
+
 		</header>
 	</div>
 	<div id="blank" class="blank">
@@ -73,12 +89,19 @@
 	</div>
 	<div id="chart" class="chart">
 		<div class="chartTop">
+			<img id="back" src="image/back.png" width="10%" style="background: black;">
+
+			
+
 
 		</div>
-		<div class="chartBottom">
+		<div id="chartBottom" class="chartBottom">
+			<div id="chartText" style="text-align: center;padding-top: 5%;margin-bottom: 5%;">
+				购物车空空如也
+			</div>
 
 		</div>
-		<script type="text/javascript" src="js/expandChart.js"></script>
+
 	</div>
 	<!--the list of Today's dishes of all-->
 	<div class="daily-dish container border">
@@ -96,16 +119,52 @@
 			<button class="dish-description border">+</button>
 		</div>
 		<div class="dishImg" no="3">
-			<img src="image/4.jpg" width="25%">
+			<img src="image/5.jpg" width="25%">
 			<button class="dish-description border">+</button>
 		</div>
-		<script type="text/javascript" src="js/addButton.js"></script>
-		<script type="text/javascript" src="js/addToChart.js"></script>
 	</div>
 
+	<div class="daily-dish container border">
+		<div class="title border">今日菜单</div>
+		<div class="dishImg" no="4">
+			<img src="image/1.jpg" width="25%">
+			<button class="dish-description border">+</button>
+		</div>
+		<div class="dishImg" no="5">
+			<img src="image/2.jpg" width="25%">
+			<button class="dish-description border">+</button>
+		</div>
+		<div class="dishImg" no="6">
+			<img src="image/3.jpg" width="25%">
+			<button class="dish-description border">+</button>
+		</div>
+		<div class="dishImg" no="7">
+			<img src="image/5.jpg" width="25%">
+			<button class="dish-description border">+</button>
+		</div>
+		<div class="dishImg" no="8">
+			<img src="image/2.jpg" width="25%">
+			<button class="dish-description border">+</button>
+		</div>
+		<div class="dishImg" no="9">
+			<img src="image/3.jpg" width="25%">
+			<button class="dish-description border">+</button>
+		</div>
+		<div class="dishImg" no="10">
+			<img src="image/5.jpg" width="25%">
+			<button class="dish-description border">+</button>
+		</div>
+		<div class="dishImg" no="11">
+			<img src="image/1.jpg" width="25%">
+			<button class="dish-description border">+</button>
+		</div>
 
-
-
+	</div>
+	<script type="text/javascript" src="js/scrolling.js"></script>
+	<script type="text/javascript" src="js/expandChart.js"></script>
+	<script type="text/javascript" src="js/addButton.js"></script>
+	<script type="text/javascript" src="js/addToChart.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
 </body o>
 
 </html>
