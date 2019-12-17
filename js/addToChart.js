@@ -28,7 +28,6 @@ $(document).ready(function () {
 var dishCount = 0;
 $(document).ready(function () {
     localStorage.clear();
-    document.cookie="username=spg";
     $(".dish-description").click(function (e) { 
         e.preventDefault();
         dishCount++;

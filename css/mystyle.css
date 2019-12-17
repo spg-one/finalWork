@@ -39,8 +39,36 @@ nav {
     display: flex;
     justify-content:space-around ;
 }
-#chart:hover{
+#chartLogo:hover{
     cursor: pointer;
+}
+.blank{
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9;
+    transition: ease-in-out;
+}
+.chart{
+    position: absolute;
+    width: 25%;
+    left: 100%;
+    height: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 10;
+    transition: all .5s;
+}
+.chartTop{
+    height: 6%;
+}
+.chartBottom{
+    height: 94%;
+    background: rgba(243, 245, 237, 0.897);
 }
 a {
     text-decoration: none;

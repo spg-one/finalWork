@@ -29,7 +29,3 @@ for(var i in dishimg){
         $(".dish-description").show(500);
     }
 }//*/
-
-function test() {
-    console.log(document.activeElement.tagName);
-}
