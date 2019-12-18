@@ -10,7 +10,6 @@ function showChart() {
 $(document).ready(function () {
     $("#chartLogo").click(function (e) {
         e.preventDefault();
-        //chart.style.right=0;
         $("#chart").show();
         setTimeout(showChart,0.5);
     });
