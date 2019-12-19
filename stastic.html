@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/mystyle.css">
+    <script src="js/jquery-2.1.1.js"></script>
+</head>
+
+<body>
+    <div class="custom-banner container border">
+        <header class="header border">
+            <!-- /////////////////////////////////////////Navigation -->
+            <nav id="menu" class="border">
+                <div class="menu1 border" style="font-size: large;">
+                    <a href="index.html">首页</a>
+                    <a href="order.html">我的订单</a>
+                    <a href="stastic.html">订单统计</a>
+                    <a href="https://github.com/spg-one/finalWork" target="	_blank">支持</a>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <div id="myChartTitle" class="border">
+        <p class="stasticToggleSwitch" chart="dishChart" no="0">▼</p>
+        菜品统计
+    </div>
+    <CANvas id="dishChart" class="chart"></CANvas>
+
+    <div id="myChartTitle" class="border">
+        <p class="stasticToggleSwitch" chart="priceChart" no="1">▼</p>
+        价格统计
+    </div>
+    <CANvas id="priceChart" class="chart"></CANvas>
+
+    <div id="myChartTitle" class="border">
+        <p class="stasticToggleSwitch" chart="flavorChart" no="2">▼</p>
+        口味统计
+    </div>
+    <CANvas id="flavorChart" class="chart"></CANvas>
+
+    <script type="text/javascript" src="js/Chart.js"></script>
+    <script type="text/javascript" src="js/stasticInit.js"></script>
+    <script type="text/javascript" src="js/stasticExpand.js"></script>
+</body>
+
+</html>
