@@ -1,0 +1,155 @@
+<!--this is the HCIT final work of wbh&lmz-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="author" content="wbh&lmz">
+	<title>饿个锤子 | 学校食堂点餐订餐</title>
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/mystyle.css">
+	<script src="js/jquery-2.1.1.js"></script>
+</head>
+
+<body>
+	<!--navigation bar and Today's popular dish -->
+	<div class="custom-banner container border">
+		<header class="header">
+			<!-- /////////////////////////////////////////Navigation -->
+			<nav id="menu" class="border">
+				<div class="menu1 border" style="font-size: large;">
+					<a href="index.html">首页</a>
+					<a href="order.html">我的订单</a>
+					<a href="stastic.html">订单统计</a>
+					<a href="https://github.com/spg-one/finalWork" target="	_blank">支持</a>
+				</div>
+				<div class="menu2 border">
+					<div>
+						<input type="search" placeholder="Serach in site">
+					</div>
+					<select>
+						<option value="清水河校区">清水河校区</option>
+						<option value="沙河校区">沙河校区</option>
+						<option value="九里堤校区">九里堤校区</option>
+						<option value="成都学院">成都学院</option>
+					</select>
+					<div style="width: 4%;display: flex; position: relative;">
+						<img id="cartLogo" src="image/cart.png" width="100%" class="border">
+						<div id="cartNumber"
+							style="position: absolute;width: 70%;left: 85%;top: -40%; background: red;border-radius: 50%;text-align: center;">
+							0</div>
+					</div>
+
+					<div id="login">请登录</div>
+				</div>
+			</nav>
+			<!-- Navigation -->
+
+			<!-- Carousel -->
+			<div id="lunbotu">
+				<div id="banner">
+					<img class="scrollingImg" src="image/1.jpg" style="width: 1300px;height:580px" />
+					<button class="btn firstBtn">立即预定 ></button>
+					<img class="scrollingImg" src="image/2.jpg" style="width: 1300px;height:580px" />
+					<button class="btn secondBtn">立即预定 ></button>
+					<img class="scrollingImg" src="image/3.jpg" style="width: 1300px;height:580px" />
+					<button class="btn thirdBtn">立即预定 ></button>
+					<img class="scrollingImg" src="image/4.jpg" style="width: 1300px;height:580px" />
+					<button class="btn forthBtn">立即预定 ></button>
+					<img class="scrollingImg" src="image/5.jpg" style="width: 1300px;height:580px" />
+					<button class="btn fifthBtn">立即预定 ></button>
+				</div>
+				<div id="clickCircleSet">
+					<ul>
+						<li id="clickCircle1" class="clickCircle"></li>
+						<li id="clickCircle2" class="clickCircle"></li>
+						<li id="clickCircle3" class="clickCircle"></li>
+						<li id="clickCircle4" class="clickCircle"></li>
+						<li id="clickCircle5" class="clickCircle"></li>
+					</ul>
+					</ul>
+				</div>
+			</div>
+
+		</header>
+	</div>
+	<div id="blank" class="blank">
+
+	</div>
+	<div id="cart" class="cart">
+		<div class="cartTop">
+			<img id="back" src="image/back.png" width="10%" style="background: black;">
+		</div>
+		<div id="cartBottom" class="cartBottom">
+			<div id="cartText" style="text-align: center;padding-top: 5%;margin-bottom: 5%;">
+				购物车空空如也
+			</div>
+		</div>
+	</div>
+	<!--the list of Today's dishes of all-->
+	<div class="daily-dish container border">
+		<div class="title border">今日热卖</div>
+		<div class="dishImg" no="0">
+			<img src="image/1.jpg" width="25%">
+			<button class="dish-description border">+</button>
+		</div>
+		<div class="dishImg" no="1">
+			<img src="image/2.jpg" width="25%">
+			<button class="dish-description border">+</button>
+		</div>
+		<div class="dishImg" no="2">
+			<img src="image/3.jpg" width="25%">
+			<button class="dish-description border">+</button>
+		</div>
+		<div class="dishImg" no="3">
+			<img src="image/5.jpg" width="25%">
+			<button class="dish-description border">+</button>
+		</div>
+	</div>
+
+	<div class="daily-dish container border">
+		<div class="title border">今日菜单</div>
+		<div class="dishImg" no="4">
+			<img src="image/1.jpg" width="25%">
+			<button class="dish-description border">+</button>
+		</div>
+		<div class="dishImg" no="5">
+			<img src="image/4.jpg" width="25%">
+			<button class="dish-description border">+</button>
+		</div>
+		<div class="dishImg" no="6">
+			<img src="image/3.jpg" width="25%">
+			<button class="dish-description border">+</button>
+		</div>
+		<div class="dishImg" no="7">
+			<img src="image/2.jpg" width="25%">
+			<button class="dish-description border">+</button>
+		</div>
+		<div class="dishImg" no="8">
+			<img src="image/2.jpg" width="25%">
+			<button class="dish-description border">+</button>
+		</div>
+		<div class="dishImg" no="9">
+			<img src="image/3.jpg" width="25%">
+			<button class="dish-description border">+</button>
+		</div>
+		<div class="dishImg" no="10">
+			<img src="image/5.jpg" width="25%">
+			<button class="dish-description border">+</button>
+		</div>
+		<div class="dishImg" no="11">
+			<img src="image/1.jpg" width="25%">
+			<button class="dish-description border">+</button>
+		</div>
+
+	</div>
+	<script type="text/javascript" src="js/scrolling.js"></script>
+	<script type="text/javascript" src="js/expandCart.js"></script>
+	<script type="text/javascript" src="js/addButton.js"></script>
+	<script type="text/javascript" src="js/addToCart.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
+</body>
+
+</html>
