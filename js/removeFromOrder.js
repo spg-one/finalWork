@@ -1,4 +1,12 @@
 $(document).ready(function () {
+    $(".delete").mouseenter(function () { 
+        $(this).attr("src", "image/delete_red.png");
+        
+    });
+    $(".delete").mouseleave(function () { 
+        $(this).attr("src", "image/delete.png");
+        
+    });
     $(".delete").click(function (e) { 
         e.preventDefault();
         var dc = localStorage.length;

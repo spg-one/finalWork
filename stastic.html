@@ -19,28 +19,34 @@
             </nav>
         </header>
     </div>
-
-    <div id="myChartTitle" class="border">
-        <p class="stasticToggleSwitch" chart="dishChart" no="0">▼</p>
-        菜品统计
+    <HR style="FILTER: alpha(opacity=0,finishopacity=100,style=1)" width="100%" color=#987cb9 SIZE=3>
+    <aside>
+        <div>
+            <div id="p1" style="font-size: 20px; font-weight: bold;">菜品统计</div>
+            <div>三天内最受欢迎</div>
+            
+        </div>
+        <HR style="FILTER: alpha(opacity=0,finishopacity=100,style=1)" width="95%" color=#987cb9 SIZE=3>
+        <div>
+            <div id="p2" style="font-size: 20px; font-weight: bold;">价格统计</div>
+            <div>有钱真好</div>
+            
+        </div>
+        <HR style="FILTER: alpha(opacity=0,finishopacity=100,style=1)" width="95%" color=#987cb9 SIZE=3>
+        <div>
+            <div id="p3" style="font-size: 20px; font-weight: bold;">口味统计</div>
+            <div>酸甜苦辣咸</div>
+            
+        </div>
+    </aside>
+    <div class="chartArea">
+        <CANvas id="dishChart" class="chart"></CANvas>
+        <CANvas id="priceChart" class="chart"></CANvas>
+        <CANvas id="flavorChart" class="chart"></CANvas>
     </div>
-    <CANvas id="dishChart" class="chart"></CANvas>
-
-    <div id="myChartTitle" class="border">
-        <p class="stasticToggleSwitch" chart="priceChart" no="1">▼</p>
-        价格统计
-    </div>
-    <CANvas id="priceChart" class="chart"></CANvas>
-
-    <div id="myChartTitle" class="border">
-        <p class="stasticToggleSwitch" chart="flavorChart" no="2">▼</p>
-        口味统计
-    </div>
-    <CANvas id="flavorChart" class="chart"></CANvas>
-
     <script type="text/javascript" src="js/Chart.js"></script>
     <script type="text/javascript" src="js/stasticInit.js"></script>
-    <script type="text/javascript" src="js/stasticExpand.js"></script>
+
 </body>
 
 </html>

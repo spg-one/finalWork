@@ -16,8 +16,6 @@ body {
     margin-bottom: 0.5rem;
 }
 
-.border {}
-
 .bordergreen {
     border: green solid 1px;
 }
@@ -73,6 +71,12 @@ select {
     border: black solid;
     width: 7rem;
     padding: .6%;
+}
+
+#login {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #login:hover {
@@ -133,6 +137,10 @@ select {
     cursor: pointer;
 }
 
+.cartImg {
+    border-radius: 10%;
+}
+
 a {
     text-decoration: none;
     color: #000000;
@@ -150,30 +158,34 @@ a:hover {
     padding-bottom: .7rem;
     border-color: black;
     font-size: 1rem;
-    top: 75%;
     position: absolute;
     outline: none;
     outline-style: none;
 }
 
 .firstBtn {
-    left: 3%;
+    left: 2%;
+    top: 69%;
 }
 
 .secondBtn {
-    left: 23%;
+    left: 32%;
+    top: 80%;
 }
 
 .thirdBtn {
-    left: 43%;
+    left: 40.5%;
+    top: 48%;
 }
 
 .forthBtn {
-    left: 63%;
+    left: 60.7%;
+    top: 61%;
 }
 
 .fifthBtn {
-    left: 83%;
+    left: 90.7%;
+    top: 63%;
 }
 
 .btn:hover {
@@ -218,6 +230,15 @@ a:hover {
     margin-left: 20px;
     text-align: center;
     cursor: pointer;
+}
+
+.dishNameScrolling {
+    position: absolute;
+}
+
+.dishPriceScrolling {
+    position: absolute;
+    font-size: 20px;
 }
 
 .daily-dish {
@@ -277,7 +298,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     margin-left: 5%;
-    margin-top: 70px;
+    margin-top: 8%;
 }
 
 .biaotou {
@@ -286,8 +307,6 @@ a:hover {
     font-weight: bold;
     width: 80%;
 }
-
-th {}
 
 td {
     width: 10rem;
@@ -299,7 +318,7 @@ td {
     font-size: 50px;
     font-weight: bold;
     left: 50%;
-    transform: translate(-50%, -35%);
+    transform: translate(-50%, 20%);
 }
 
 .delete:hover {
@@ -310,8 +329,8 @@ td {
 #sumPad {
     display: flex;
     text-align: center;
-    font-size: 35px;
-    font-weight: bold;
+    font-size: 20px;
+    align-items: center;
 }
 
 #orderConfirm {
@@ -328,7 +347,7 @@ td {
     height: 100%;
     border: black solid .2rem;
     background: white;
-    font-size: 35px;
+    font-size: 25px;
     font-weight: bold;
     outline: none;
 }
@@ -354,8 +373,62 @@ td {
 
 .chart {
     margin-bottom: 3rem;
+    display: block;
+    margin-left: 30rem;
 }
 
 .stasticToggleSwitch:hover {
     cursor: pointer;
+}
+
+aside {
+    margin-left: 5%;
+}
+
+aside>div {
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+aside>div div:first-child {
+    width: 10rem;
+    height: 10rem;
+    background: silver;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+aside>div div:nth-child(2) {
+    position: absolute;
+    left: 2rem;
+    width: 30rem;
+    background: #777;
+    z-index: 0;
+    padding: 1rem;
+    text-align: right;
+    color: white;
+    transform: rotate(-90deg);
+    transform-origin: 8rem 50%;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    border-radius: 5%;
+}
+
+aside>div div:first-child:hover+div {
+    transform: rotate(0);
+    opacity: 1;
+}
+
+.chartArea {
+    position: absolute;
+    top: 2.5rem;
+    width: 40%;
+    left: 10%;
 }

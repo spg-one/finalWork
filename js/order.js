@@ -21,7 +21,7 @@ $(document).ready(function () {
             
             var orderItem = document.createElement("tr");
             
-            orderItem.innerHTML = "<td style='padding-top: .5rem;'><img src="+path+" style='width: 11rem;'></td><td style='padding-top: .5rem;'>"+name+"</td><td style='padding-top: .5rem;'>"+dishCountList[i]+"</td><td style='padding-top: .5rem;'>￥"+price+"</td><td style='padding-top: .5rem;' class='delete' imgpath="+path+">删除</td>";
+            orderItem.innerHTML = "<td style='padding-top: .5rem;'><img src="+path+" style='width: 11rem;'></td><td style='padding-top: .5rem;'>"+name+"</td><td style='padding-top: .5rem;'>"+dishCountList[i]+"</td><td style='padding-top: .5rem;'>   ￥"+price+"</td><td style='padding-top: .5rem;'><img src='image/delete.png' class='delete' imgpath="+path+"></td>";
             table.appendChild(orderItem);
             
             sum=sum+price*dishCountList[i];
