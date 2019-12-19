@@ -34,7 +34,12 @@ $(document).ready(function () {
 
 $(".orderBtn:first").click(function (e) { 
     e.preventDefault();
-    var payback = prompt("别想了你买不起的");
+    if(sum==0){
+        var payback = prompt("啥都没选买个锤子!");
+    }
+    else{
+        var payback = prompt("别想了你买不起的");
+    }
     console.log(payback);
 });
 $(".orderBtn:last").click(function (e) { 
