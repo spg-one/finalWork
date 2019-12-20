@@ -37,7 +37,10 @@ $(document).ready(function () {
     cartBottom.appendChild(newPic);
     cartNumber.innerHTML = dishCount;
     cartText.innerHTML = "点击图片从购物车中删除";
-
+    $(".pop").show();
+    setTimeout(function(){
+      $(".pop").hide();
+    },1500);
   });
   $(".btn").click(function (e) {
     e.preventDefault();
@@ -53,6 +56,11 @@ $(document).ready(function () {
     cartBottom.appendChild(newPic);
     cartNumber.innerHTML = dishCount;
     cartText.innerHTML = "点击图片从购物车中删除";
+
+    $(".pop").show();
+    setTimeout(function(){
+      $(".pop").hide();
+    },1500);
   });
 
 });
