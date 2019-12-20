@@ -3,7 +3,7 @@ var imgwidth = document.getElementsByClassName("scrollingImg");
 var oli = document.getElementsByClassName("clickCircle");
 var i = 0;
 var availableWidth = document.body.clientWidth;
-auto();
+//auto();
 oli[0].style.cssText = "background:#000000;color:#fff;";
 
 window.onload=function(){

@@ -161,6 +161,7 @@ a:hover {
     position: absolute;
     outline: none;
     outline-style: none;
+    
 }
 
 .firstBtn {
@@ -276,6 +277,8 @@ a:hover {
     width: 100%;
     left: 0;
     background: rgba(0, 0, 0, 0.5);
+    border: 0;
+    outline: none;
 }
 
 .dish-description:hover {
@@ -431,4 +434,17 @@ aside>div div:first-child:hover+div {
     top: 2.5rem;
     width: 40%;
     left: 10%;
+}
+.pop{
+    position: fixed;
+    left: 50%; 
+    top: 40%; 
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 12;
+    transform: translate(-50%,0);
+    color: white;
+    border-radius: 5%;
+    padding: 2rem;
+    font-size: 2rem;
+    display: none;
 }
